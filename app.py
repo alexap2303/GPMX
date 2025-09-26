@@ -25,7 +25,7 @@ df_ventas_completo['PARTICIPACION'] = (df_ventas_completo['VENTA_GARANTIA_EXTEND
                                       df_ventas_completo['VENTA_AUTOS_NUEVOS'] * 100)
 
 # Inicializar la aplicación Dash
-app = dash.Dash(__name__, suppress_callback_exceptions=True).server
+app = dash.Dash(__name__, suppress_callback_exceptions=True)
 
 # Layout de la aplicación expandido
 app.layout = html.Div([
@@ -584,4 +584,5 @@ def update_grafico_barras(selected_años, selected_meses, selected_drms, selecte
 # Ejecutar la aplicación
 if __name__ == '__main__':
     app.run(debug=True)
+
 
