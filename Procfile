@@ -1,2 +1,1 @@
-web: gunicorn app:sim
-
+web: gunicorn app:app
